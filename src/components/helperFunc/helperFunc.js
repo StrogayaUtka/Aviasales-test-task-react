@@ -1,4 +1,4 @@
-timeCalc = (data) => {
+function timeCalc(data) {
     let days = Math.floor(data / 1440)
     let hours = Math.floor(data % 1440 / 60)
     let minutes = '' + Math.floor(data % 60) + 'м'
@@ -24,7 +24,7 @@ timeCalc = (data) => {
     return result
 }
 
-configFilter = (filter, numberOfTransfers, isChecked) => {
+function configFilter(filter, numberOfTransfers, isChecked) {
     const nextFilter = filter.slice()
     if (numberOfTransfers === 'l') {
         document.getElementById('box-0').checked = false
@@ -52,7 +52,7 @@ configFilter = (filter, numberOfTransfers, isChecked) => {
     }
 }
 
-writeTransfers = (numberOfTransfers) => {
+function writeTransfers(numberOfTransfers) {
     if (numberOfTransfers === 0 || numberOfTransfers > 4) {
         return(`Без пересадок`)
     }
@@ -70,7 +70,7 @@ writeTransfers = (numberOfTransfers) => {
     }
 }
 
-sortByDuraion = (array) => {
+function sortByDuraion(array) {
     if (array.length < 2) {
         return array
     } else {
