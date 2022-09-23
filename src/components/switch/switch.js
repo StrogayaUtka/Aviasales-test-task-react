@@ -6,7 +6,7 @@ export const Switch = ({onSortingChange}) => {
 
     const [activeBtn, setActiveBtn] = useState('cheap')
 
-    onSwitchClick = (e) => {
+    function onSwitchClick(e) {
         if (e.target.textContent === 'самый дешевый') {
             setActiveBtn('cheap')
             onSortingChange('cheap')
