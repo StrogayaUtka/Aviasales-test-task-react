@@ -11,7 +11,6 @@ const Main = () => {
 
     const onFilterCheck = (e) => {
         setFilter(configFilter(filter, e.target.id.slice(-1), e.target.checked))
-        console.log(e.target.id.slice(-1))
     }
 
     return (
