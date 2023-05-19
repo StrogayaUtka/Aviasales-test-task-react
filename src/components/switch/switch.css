@@ -6,6 +6,10 @@
     border: solid 1px #DFE5EC;
 }
 
+form {
+    margin-bottom: 10px;
+}
+
 button {
     display: flex;
     align-items: center;
